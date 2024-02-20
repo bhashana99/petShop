@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export default function Nav() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);

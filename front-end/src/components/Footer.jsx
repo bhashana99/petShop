@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex flex-row bg-stone-900 text-white p-8 font-sans">
-        <div className="basis-1/3">
+      <div className="flex flex-col md:flex-row bg-stone-900 text-white p-8 font-sans">
+        <div className="basis-1/3 mb-5">
           <h4 className="text-xl mb-3">About company overview</h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quod
@@ -24,7 +24,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex justify-center border-white border-l-2 basis-1/3 ">
+        <div className="flex justify-center md:border-white md:border-l-2 basis-1/3 mb-5">
           <div>
             <h4 className="text-xl mb-3">Customer</h4>
 
@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center border-white border-l-2 basis-1/3   ">
+        <div className="flex justify-center md:border-white md:border-l-2 basis-1/3   ">
           <div>
             <h4 className="text-xl mb-3">Store contact info</h4>
             <div>
