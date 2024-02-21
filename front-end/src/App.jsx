@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
  import Footer from './components/Footer'
- import Home from './components/Home'
+ //import Home from './components/Home'
  import Nav from './components/Nav'
 import Cart from "./pages/Cart";
 
@@ -16,12 +16,12 @@ function App() {
       </Routes>
    
       <Footer /> */}
-      {/* <Nav/> */}
+      <Nav/>
       <Routes>
         <Route path="/cart" element={<Cart/>} />
       </Routes>
 
-      {/* <Footer/> */}
+      <Footer/>
 
     </BrowserRouter>
   )
