@@ -3,6 +3,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 
 export default function Nav() {
   const [nav, setNav] = useState(true);
@@ -26,7 +27,8 @@ export default function Nav() {
       </div>
       <div className="flex justify-between gap-5  ">
         <CiShoppingCart className="text-2xl" />
-        <CgProfile className="text-2xl" />
+        <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
+       
       </div>
 
       <div onClick={handleNav} className="block md:hidden">

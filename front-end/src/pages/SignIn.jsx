@@ -1,8 +1,7 @@
 import React from "react";
-
 import { FaUser } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { MdPassword } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   return (
@@ -48,7 +47,9 @@ export default function SignUp() {
           <div className="mt-8 ">
             <p>
               Don't have an account?{" "}
-              <span className="ml-5 text-fuchsia-700">Sign Up</span>
+              <Link to="/sign-up">
+                <span className="ml-5 text-fuchsia-700">Sign Up</span>
+              </Link>
             </p>
           </div>
         </div>
