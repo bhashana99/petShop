@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center md:border-white md:border-l-2 basis-1/3   ">
+        <div className="flex justify-center md:border-white md:border-l-2 basis-1/3 ">
           <div>
             <h4 className="text-xl mb-3">Store contact info</h4>
             <div>
