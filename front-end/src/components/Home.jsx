@@ -3,6 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import wallpaper_1 from '../components/images/wallpaper_1.jpg';
+import wallpaper_2 from '../components/images/wallpaper_2.jpg';
+import wallpaper_3 from '../components/images/wallpaper_3.jpeg';
+
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
@@ -23,9 +27,9 @@ export default function Home() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide><img src={wallpaper_1} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={wallpaper_2} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={wallpaper_3} alt="" /></SwiperSlide>
         
       </Swiper>
     </div>
