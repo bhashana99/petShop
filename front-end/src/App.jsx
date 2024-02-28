@@ -4,6 +4,7 @@ import Home from './components/Home'
 import SignUp from './pages/SignUp'
 import SignIn from './pages/SignIn'
 import Nav from './components/Nav'
+import Items from "./components/Items";
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn/>} />
 
       </Routes>
+      <Items/>
    
       <Footer />
     </BrowserRouter>
