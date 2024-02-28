@@ -2,13 +2,15 @@ package com.example.backend.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity(name = "user_info")
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "user_info")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,6 +22,8 @@ public class User {
     private String username;
     @Column(nullable = false)
     private String password;
-    
-    private String role;
+
+
+
+
 }
