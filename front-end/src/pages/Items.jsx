@@ -1,5 +1,6 @@
 import React from 'react'
 import './Items.css'
+import Product from './Product'
 
 
 const Items = () => {
@@ -7,6 +8,8 @@ const Items = () => {
     <div class="items">
 
         <h1 className="title">Featured Items</h1>
+        <Product/>
+        
       
     </div>
   )

@@ -4,7 +4,7 @@ import Home from './components/Home'
 import SignUp from './pages/SignUp'
 import SignIn from './pages/SignIn'
 import Nav from './components/Nav'
-import Items from "./components/Items";
+import Items from "./pages/Items";
 
 function App() {
   
