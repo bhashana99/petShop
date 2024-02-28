@@ -1,12 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
- import Footer from './components/Footer'
- //import Home from './components/Home'
- import Nav from './components/Nav'
+import Footer from "./components/Footer";
+//import Home from './components/Home'
+import Nav from "./components/Nav";
 import Cart from "./pages/Cart";
 
 function App() {
-  
-
   return (
     <BrowserRouter>
       {/* <Nav />
@@ -14,17 +12,16 @@ function App() {
         <Route path="/" element={<Home />} />
         
       </Routes>
-   
+  
       <Footer /> */}
-      <Nav/>
+      <Nav />
       <Routes>
-        <Route path="/cart" element={<Cart/>} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
 
-      <Footer/>
-
+      <Footer />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

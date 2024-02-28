@@ -27,7 +27,7 @@
 } */
 .outerbox{
     border: solid blue;
-    height: 80vh;
+    min-height: 70vh;
 }
 .outerbox .row-1{
     display: flex;
