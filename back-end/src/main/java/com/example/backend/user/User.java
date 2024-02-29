@@ -1,12 +1,12 @@
 package com.example.backend.user;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.NaturalId;
 
 @Entity
+@Getter
+@Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,4 +22,6 @@ public class User {
     private String password;
     private String role;
     private Boolean isEnable=false;
+
+
 }
