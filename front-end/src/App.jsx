@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Footer from "./components/Footer";
-//import Home from './components/Home'
-// import Nav from "./components/Nav";
-// import Cart from "./pages/Cart";
-import CartItemCard from "./components/CartItemCard";
+import Footer from "./components/Footer";
+// import Home from './components/Home'
+import Nav from "./components/Nav";
+import Cart from "./pages/Cart";
+// import CartItemCard from "./components/CartItemCard";
 
 function App() {
   return (
@@ -15,12 +15,12 @@ function App() {
       </Routes>
   
       <Footer /> */}
-      {/* <Nav /> */}
+      <Nav />
       <Routes>
-        <Route path="/cartitemcard" element={<CartItemCard />} />
+        <Route path="/cart" element={<Cart/>} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

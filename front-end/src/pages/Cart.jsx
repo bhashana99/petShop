@@ -1,4 +1,6 @@
 import "../styles/cart.css";
+import CartItemCard from "../components/CartItemCard";
+
 function Cart() {
   return (
     <div className="outerbox">
@@ -17,7 +19,9 @@ function Cart() {
             <h1>Products</h1>
           </div>
           <div className="item-card">
-            <img src="" alt="product-image" />
+            <CartItemCard/>
+            <CartItemCard/>
+            <CartItemCard/>
           </div>
 
         </div>
