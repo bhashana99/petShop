@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 //import Home from './components/Home'
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 // import Cart from "./pages/Cart";
 import CartItemCard from "./components/CartItemCard";
 
