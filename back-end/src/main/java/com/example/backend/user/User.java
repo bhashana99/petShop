@@ -1,10 +1,10 @@
-package com.example.backend.model;
+package com.example.backend.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.NaturalId;
 
 @Entity
 @Data
@@ -16,14 +16,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="user_id")
     private Long id;
-    @Column(unique = true,nullable = false)
+    @NaturalId(mutable = true)
     private String email;
-    @Column(unique = true,nullable = false)
     private String username;
-    @Column(nullable = false)
     private String password;
-
-
-
-
+    private String role;
+    private Boolean isEnable=false;
 }
