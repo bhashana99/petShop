@@ -1,25 +1,26 @@
-package com.example.backend;
+package com.example.backend.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.backend.entity.Product;
+import com.example.backend.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+
 public class ProductController {
 
+    @Autowired
+    ProductRepository productRepository ;
+
+    @PostMapping("/product")
+    Product addProduct(@RequestBody Product newProduct) {
+        return productRepository.save(newProduct);
+    }
+
     @GetMapping("/product")
-    public List<Product> getProduct(){
-        return List.of(
-                new Product(
-                        1,
-                        " Dog-Belt",
-                        "Rs.1450",
-                        20,
-                        "Belt",
-                        "Leather black belt for dogs",
-                        "/images/cat food 1.jpg"
-                        )
-        );
+    List<Product> getAllProducts() {
+        return productRepository.findAll();
     }
 }

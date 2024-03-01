@@ -1,16 +1,16 @@
-package com.example.backend;
+package com.example.backend.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table
 public class Product {
+    public Product() {
+
+    }
     @Id
-    @Column
-    private int id;
+    @GeneratedValue
+    private Long id;
     @Column
     private String name;
     @Column
@@ -24,11 +24,11 @@ public class Product {
     @Column
     private String image;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -52,7 +52,7 @@ public class Product {
         return quantity;
     }
 
-    public Product(int id, String name, String price, int quantity, String category, String description, String image) {
+    public Product(long id, String name, String price, int quantity, String category, String description, String image) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -111,7 +111,6 @@ public class Product {
     public void setImage(String image) {
         this.image = image;
     }
-
 
 
 }
