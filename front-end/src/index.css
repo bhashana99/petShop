@@ -67,7 +67,7 @@
 
 
 .product-container{
-  width: 250px;
+  width: 280px;
   box-shadow: 0.8rem;
   margin: 2rem 1rem;
   position: relative;
@@ -83,8 +83,8 @@
 
 
 .product-div img{
-  width: 220px;
-  padding: 50px;
+  width: 300px;
+  padding: 40px;
   
 }
 
@@ -98,6 +98,8 @@
 .detail-container{
   align-items: center;
   text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .heading{
@@ -116,9 +118,9 @@
   border-radius: 0.5rem;
   color: #fff;
   background: #116f53c6;
-  font-size: 12px;
+  font-size: 16px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .btn:hover{
