@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-
+@RequestMapping("/petshop")
+@CrossOrigin("http://127.0.0.1:5173/")
 public class ProductController {
 
     @Autowired
