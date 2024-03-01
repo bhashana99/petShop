@@ -1,6 +1,5 @@
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-import Image_1 from '../components/images/cat food 1.jpg';
 
 function ViewAll() {
 
@@ -25,17 +24,21 @@ function ViewAll() {
                 
             </div>
             <div className='product-div'>
-                <div className='product-container'>
+                {
+                    product.map((product,index)=>(
+                        <div className='product-container' key={index}>
                     <div className='p-image-container'>
-                        <img src={Image_1} alt="" />
+                        <img src={"images/"+product.image} alt="" />
                     </div>
                     <div className='detail-container'>
-                        <p>Name</p>
-                        <p>Price</p>
+                        <p>{product.name}</p>
+                        <p>Rs.{product.price}/=</p>
                         <button className='btn'>Add to cart</button>
                     </div>
 
                 </div>
+                    ))
+                }
                 
 
                 
