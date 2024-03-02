@@ -20,6 +20,8 @@
 }
 .brandings img{
     margin-right: auto;
-    margin-top: 0.5rem;
+    margin-top: auto;
     margin-bottom: 1rem;
+    margin-left: auto;
+    width: 15rem;
 }
