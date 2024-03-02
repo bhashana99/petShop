@@ -65,7 +65,7 @@
     position:relative;
     margin-right: 20px;
     width: auto;
-    /* width: 70vw; */
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -97,7 +97,6 @@
   }
   
   .checkout .card-header h4 {
-    /* margin-bottom: 0; */
     margin-left: auto;
     margin-right: auto;
     font-size: 1.8rem;
@@ -194,3 +193,63 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
   }
+/* /////////////////////////////////////////Search bar////////////////// */
+/* .searchBar .input-wrapper{
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 2.5rem;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+.searchBar input{
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+#search-icon{
+  color: blue;
+} */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #0b0b0b;
+}
+
+.search-icon {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #f4efef;
+  border-radius: 5px;
+}
+
+
+.search-bar.expanded {
+  width: 220px;
+}
+.searchbar input{
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+#search-icon2{
+  color: rgb(234, 234, 241);
+  background-color: #000;
+}
+.search-bar input{
+  color: #000;
+  margin-left: 2px;
+}
