@@ -2,13 +2,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from './components/Home'
 import Nav from "./components/Nav";
-import Cart from "./pages/Cart";
-import { useState } from "react";
+// import Cart from "./pages/Cart";
+// import { useState } from "react";
 // import CartItemCard from "./components/CartItemCard";
 
 function App() {
   
-  const [cart,setCart] = useState([]);
+  // const [cart,setCart] = useState([]);
 
   return (
 
