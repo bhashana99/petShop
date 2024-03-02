@@ -1,30 +1,58 @@
 import "../styles/cart.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 
-function CartItemCard() {
+
+function CartItemCard(item) {
+ 
+  const {iid,iname,price,img} =item;
+  const [qty,setQty] = useState(1);
+
+  const handleQty = (d) => {
+    if (qty>0){
+      setQty(qty+d);
+    }
+  }
+
+  const handleUpdateQty = async (updateQty,iItemId) => {
+    try {
+      const response = await axios.post(
+        // `http://localhost:8080/api/v1/cart/updateShoppingCart?shoppingCartId=${shoppingCartId}&quantity=${quantity}`
+        );
+      //return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
   return (
+
     <div className="card-box">
       <div className="cart-img">
         <img
-          src="https://m.media-amazon.com/images/I/810OOg88LoL._AC_UY327_FMwebp_QL65_.jpg"
+          src={img}
           alt="product-image"
         />
       </div>
       <div className="cart-details">
-        <div className="item-name">"My First Book of Pencil Control"</div>
-        <div className="item-price">Rs.89/=</div>
+        <div className="item-name">{iname}</div>
+        <div className="item-price">{price}</div>
         <div className="item-button">
           <div className="item-QtyButton">
-            <button>+</button>
-            <button>2</button>
-            <button>-</button>
+            <button onClick={()=>handleQty(1)}>+</button>
+            <button>{qty}</button>
+            <button onClick={()=>handleQty(-1)}>-</button>
+            <button onClick={()=>handleUpdateQty(qty,iid)}>Update</button>
           </div>
           <div className="item-remove">
-            <button>remove</button>
+            
+            <button onClick={()=>{handleRemove(iid)}}>remove</button>
           </div>
         </div>
       </div>
     </div>
+
+
   );
 }
 
