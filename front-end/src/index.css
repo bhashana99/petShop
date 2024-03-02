@@ -139,10 +139,12 @@
   margin: auto;
   align-items: center;
   background: #e1e1e1;
+  height: 70vh;
+  margin-bottom: 60px;
 }
 
 .productImage{
-  width: 420px;
+  width: 300px;
   margin: 40px;
 }
 

@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from '../components/images/Logo.jpg'
 import { CiShoppingCart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
@@ -21,10 +20,10 @@ export default function Nav() {
       </div>
       <div className="">
         <ul className=" justify-between gap-8 uppercase hidden md:flex font-medium text-2xl ">
-          <li>Home</li>
-          <li>About</li>
-          <li>Shop</li>
-          <li>Contact</li>
+          <Link to={"/"}><li>Home</li></Link>
+          <Link><li>About</li></Link>
+          <Link to={"/shop"}><li>Shop</li></Link>
+          <Link><li>Contact</li></Link>
         </ul>
       </div>
       <div className="flex justify-between gap-5  ">

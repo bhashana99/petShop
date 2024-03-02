@@ -9,6 +9,7 @@ import wallpaper_3 from '../components/images/wallpaper_3.jpeg';
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import ViewAll from "./ViewAll";
 
+
 export default function Home() {
   return (
     <div>
