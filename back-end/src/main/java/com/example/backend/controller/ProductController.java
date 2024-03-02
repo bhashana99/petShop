@@ -24,4 +24,16 @@ public class ProductController {
     List<Product> getAllProducts() {
         return productRepository.findAll();
     }
+
+    @GetMapping("/getProductById")
+    Product getProductById(@RequestParam long id){
+        return productRepository.findById(id);
+    }
+
+//    @GetMapping("/getProductsByCategory")
+//    List<Product> getProductCategories(@RequestParam String category) {
+//        return productRepository.findByCategories(category);
+//    }
+
+
 }
