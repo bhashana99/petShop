@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-// import Home from './components/Home'
+import Home from './components/Home'
 import Nav from "./components/Nav";
 import Cart from "./pages/Cart";
 import { useState } from "react";
@@ -9,23 +9,21 @@ import { useState } from "react";
 function App() {
   
   const [cart,setCart] = useState([]);
-  
+
   return (
 
     <BrowserRouter>
-      {/* <Nav />
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        
       </Routes>
-  
-      <Footer /> */}
-      <Nav />
+      <Footer />
+      {/* <Nav />
       <Routes>
         <Route path="/cart" element={<Cart/>} />
       </Routes>
 
-      <Footer />
+      <Footer /> */}
     </BrowserRouter>
   );
 }
