@@ -1,9 +1,29 @@
-import React from 'react'
+import { FaSearch } from 'react-icons/fa'
+import "../index.css"
+import React, { useState } from 'react';
+
 
 const SearchBar = () => {
-  return (
-    <div>SearchBar</div>
-  )
-}
+  const [isExpanded, setIsExpanded] = useState(false);
 
-export default SearchBar
+  const handleSearchIconClick = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <div className={`search-bar ${isExpanded ? 'expanded' : ''}`}>
+      <div className="search-icon" onClick={handleSearchIconClick}>
+      <FaSearch id='search-icon2'/>
+      </div>
+      {isExpanded && (
+        <input
+          type="text"
+          placeholder="Search..."
+          onChange={(e) => console.log(e.target.value)} 
+        />
+      )}
+    </div>
+  );
+};
+
+export default SearchBar;

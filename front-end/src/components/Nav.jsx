@@ -4,6 +4,7 @@ import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import {Link} from 'react-router-dom'
+import SearchBar from "./SearchBar";
 
 export default function Nav() {
   const [nav, setNav] = useState(true);
@@ -25,11 +26,16 @@ export default function Nav() {
           <li>Contact</li>
         </ul>
       </div>
+
+
       <div className="flex justify-between gap-5  ">
         <CiShoppingCart className="text-2xl" />
         <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
-       
+        <div>
+          <SearchBar/>
+       </div>
       </div>
+
 
       <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
