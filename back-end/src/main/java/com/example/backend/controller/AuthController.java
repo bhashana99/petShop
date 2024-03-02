@@ -25,7 +25,7 @@ import java.util.Random;
 
 @RestController
 @RequestMapping("/api/v1/auth/")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 public class AuthController {
     @Autowired
     private final UserRepository userRepository;
@@ -76,7 +76,7 @@ public class AuthController {
         int otp = otpGenerator();
         MailBody mailBody = MailBody.builder()
                 .to(email)
-                .text("Click the following link to Verify Your Email: <a href='http://localhost:8080/userVerification/verifyOtp/" + otp + "/" + email + "'>Verify Your Email</a>")
+                .text("Click the following link to Verify Your Email: http://localhost:8080/userVerification/verifyOtp/" + otp + "/" + email)
                 .subject("Verification email")
                 .build();
 

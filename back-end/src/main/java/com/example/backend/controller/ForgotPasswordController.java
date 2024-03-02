@@ -19,7 +19,7 @@ import java.util.Random;
 
 @RestController
 @RequestMapping("/forgotPassword")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 public class ForgotPasswordController {
     private final UserRepository userRepository;
     private final EmailService emailService;

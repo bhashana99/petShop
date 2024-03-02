@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function SignUp() {
   let navigate = useNavigate();
 
-  const [user, setUser] = useState({ });
+  const [user, setUser] = useState({});
   const [backEndErrors, setBackEndErrors] = useState([]); // State to store backend error messages
   const [errors, setErrors] = useState({}); // State to store field validation errors
   const [registrationSuccess, setRegistrationSuccess] = useState(false); // State to track registration success
@@ -62,7 +62,9 @@ export default function SignUp() {
         cpassword: user.cpassword,
       });
       setRegistrationSuccess(true); // Set registration success to true
-    
+      setTimeout(() => {
+        navigate("/sign-in"); // Navigate to login form after delay
+    }, 3000);
     } catch (error) {
       console.error("Error occurred while registering:", error);
       if (error.response && error.response.data) {
@@ -97,7 +99,7 @@ export default function SignUp() {
             <div className="bg-fuchsia-200 flex flex-row py-3 p-2 rounded-lg items-center">
               <FaUser className="text-xl text-slate-700" />
               <input
-               onChange={onInputChange}
+                onChange={onInputChange}
                 value={username}
                 type="text"
                 placeholder="Username"
@@ -105,18 +107,18 @@ export default function SignUp() {
                 required
                 className=" bg-fuchsia-200 outline outline-offset-1 outline-fuchsia-200 ml-5 pr-10"
               />
-               {errors.username && (
-            <div className="error" style={{ color: "red" }}>
-              {errors.username}
-            </div>
-          )}{" "}
-          {/* Display username error message */}
+              {errors.username && (
+                <div className="error" style={{ color: "red" }}>
+                  {errors.username}
+                </div>
+              )}{" "}
+              {/* Display username error message */}
             </div>
             <div className="bg-fuchsia-200 flex flex-row py-3 p-2 rounded-lg items-center mt-5">
               <MdEmail className="text-xl text-slate-700" />
               <input
-               onChange={onInputChange}
-               value={email}
+                onChange={onInputChange}
+                value={email}
                 type="email"
                 placeholder="Email"
                 id="email"
@@ -124,17 +126,17 @@ export default function SignUp() {
                 className=" bg-fuchsia-200 outline outline-offset-1 outline-fuchsia-200 ml-5 pr-10"
               />
               {errors.email && (
-            <div className="error" style={{ color: "red" }}>
-              {errors.email}
-            </div>
-          )}{" "}
-          {/* Display email error message */}
+                <div className="error" style={{ color: "red" }}>
+                  {errors.email}
+                </div>
+              )}{" "}
+              {/* Display email error message */}
             </div>
             <div className="bg-fuchsia-200 flex flex-row py-3 p-2 rounded-lg items-center mt-5">
               <MdPassword className="text-xl text-slate-700" />
               <input
-               onChange={onInputChange}
-               value={password}
+                onChange={onInputChange}
+                value={password}
                 type="password"
                 placeholder="Password"
                 id="password"
@@ -142,16 +144,16 @@ export default function SignUp() {
                 className=" bg-fuchsia-200 outline outline-offset-1 outline-fuchsia-200 ml-5 pr-10"
               />
               {errors.password && (
-            <div className="error" style={{ color: "red" }}>
-              {errors.password}
-            </div>
-          )}{" "}
-          {/* Display password error message */}
+                <div className="error" style={{ color: "red" }}>
+                  {errors.password}
+                </div>
+              )}{" "}
+              {/* Display password error message */}
             </div>
             <div className="bg-fuchsia-200 flex flex-row py-3 p-2 rounded-lg items-center mt-5">
               <MdPassword className="text-xl text-slate-700" />
               <input
-               onChange={onInputChange}
+                onChange={onInputChange}
                 value={cpassword}
                 type="password"
                 placeholder="Confirm Password"
@@ -159,14 +161,14 @@ export default function SignUp() {
                 required
                 className=" bg-fuchsia-200 outline outline-offset-1 outline-fuchsia-200 ml-5 pr-10"
               />
-               {errors.cpassword && (
-            <div className="error" style={{ color: "red" }}>
-              {errors.cpassword}
+              {errors.cpassword && (
+                <div className="error" style={{ color: "red" }}>
+                  {errors.cpassword}
+                </div>
+              )}{" "}
+              {/* Display cpassword error message with red color */}
             </div>
-          )}{" "}
-          {/* Display cpassword error message with red color */}
-            </div>
-           
+
             <div className="mt-5 bg-fuchsia-800 py-3 rounded-full">
               <button type="submit" className="text-white">
                 Sign Up

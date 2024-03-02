@@ -4,13 +4,14 @@ import { MdPassword } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import axios from 'axios';
+import axios from "axios";
+import { jwtDecode } from "jwt-decode";
 
 export default function SignUp() {
   let navigate = useNavigate();
 
-  const [user, setUser] = useState({
-  });
+  const [user, setUser] = useState({email: "",
+  password: ""});
   const [error, setError] = useState("");
 
   const { email, password } = user;
@@ -39,14 +40,12 @@ export default function SignUp() {
         }
       );
 
-     
       const token = response.data.accessToken;
       console.log(token);
-      localStorage.setItem('token', token);
+      localStorage.setItem("token", token);
 
-            const decoded = jwtDecode(token);
-            console.log(decoded.role);
-      
+      const decoded = jwtDecode(token);
+      console.log(decoded.role);
 
       //Assuming successful login navigates to dashboard
       navigate("/");
@@ -72,11 +71,11 @@ export default function SignUp() {
             <div className="bg-fuchsia-200 flex flex-row py-3 p-2 rounded-lg items-center">
               <FaUser className="text-xl text-slate-700" />
               <input
-               onChange={onInputChange}
-               value={email}
-                type="text"
-                placeholder="Username"
-                id="username"
+                onChange={onInputChange}
+                value={email}
+                type="email"
+                placeholder="Email"
+                id="email"
                 required
                 className=" bg-fuchsia-200 outline outline-offset-1 outline-fuchsia-200 ml-5 pr-10"
               />
@@ -85,8 +84,8 @@ export default function SignUp() {
             <div className="bg-fuchsia-200 flex flex-row py-3 p-2 rounded-lg items-center mt-5">
               <MdPassword className="text-xl text-slate-700" />
               <input
-               onChange={onInputChange}
-               value={password}
+                onChange={onInputChange}
+                value={password}
                 type="password"
                 placeholder="Password"
                 id="password"
@@ -95,10 +94,10 @@ export default function SignUp() {
               />
             </div>
             {error && (
-            <div className="error" style={{ color: "red" }}>
-              {error}
-            </div>
-          )}
+              <div className="error" style={{ color: "red" }}>
+                {error}
+              </div>
+            )}
             <div className="mt-5 bg-fuchsia-800 py-3 rounded-full">
               <button type="submit" className="text-white">
                 Login

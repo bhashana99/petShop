@@ -14,7 +14,7 @@ import java.util.Random;
 
 @RestController
 @RequestMapping("/userVerification")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 public class UserVerificationController {
     private final UserRepository userRepository;
 
