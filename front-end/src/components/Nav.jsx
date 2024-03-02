@@ -1,4 +1,3 @@
-import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
