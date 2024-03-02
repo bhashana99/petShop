@@ -16,13 +16,12 @@ function Shop() {
         const result=await axios.get("http://localhost:8010/petshop/product");
         setProduct(result.data);
     }
-
-    return ( 
-        <div>
-            <h1 className='heading'>Products</h1>
+    
+    if(product.category=="food"){
+        return(
             <div>
-                
-            </div>
+                    <h1 className='heading'>Products</h1>
+            
             <div className='product-div'>
         
                 {
@@ -42,16 +41,20 @@ function Shop() {
                                     
                                 </div>
                             </Link>
-                        </div>
-                        
-                    
-                    
+                        </div> 
                     ))
-                }
-                
-
-                
+                } 
             </div>
+            </div>
+        );
+    }
+    
+    console.log(product.category);
+
+    return ( 
+        
+        <div>
+            
         </div>
      );
 }
