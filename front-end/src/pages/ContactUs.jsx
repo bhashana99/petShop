@@ -1,7 +1,9 @@
 import React from 'react'
 import './ContactUs.css'
 import map from './Assests/map.png'
-import { IoLocationOutline } from "react-icons/io5";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { TfiEmail } from "react-icons/tfi";
+import { FaFacebook } from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
@@ -12,11 +14,22 @@ const ContactUs = () => {
         <div className='contactUsDescription'>
 
           <h2>Explore All kinds of brands in the world</h2>
-          <img src={map} alt="" />
 
         </div>
         
-      
+       <div className='map'>
+       < img src={map} alt="" />
+
+       <div className="mapDescription">
+
+            <ul>
+                <li><BsFillTelephoneFill />Telephone : 07703425612</li>
+                <li><TfiEmail />Email : petshop@gmail.com</li>
+                <li><FaFacebook />Facebook : petshop</li>
+            </ul>
+
+       </div>
+       </div>
     </div>
   )
 }
