@@ -1,0 +1,18 @@
+.contactUs img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+    margin-left: 30rem;
+}
+.contactUsDescription {
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+.contactUsDescription h2{
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}

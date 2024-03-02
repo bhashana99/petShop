@@ -6,6 +6,7 @@ import SignIn from './pages/SignIn'
 import Nav from './components/Nav'
 import Items from "./pages/Items";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
       </Routes>
       <Items/>
       <AboutUs/>
+      <ContactUs/>
    
       <Footer />
     </BrowserRouter>
