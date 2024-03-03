@@ -1,0 +1,26 @@
+.map img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+    margin-left: 18rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contactUsDescription h2{
+    text-align: center;
+    padding: 3rem 3rem 3rem 3rem;
+    color: rgb(205, 54, 54);
+    font-size: 2rem;
+}
+.map{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+}
+.mapDescription{
+   font-size: 1.5rem;
+   margin-left: 18rem;
+   margin-top: 5rem;
+}
