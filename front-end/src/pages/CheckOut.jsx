@@ -1,10 +1,11 @@
 //import React from 'react'
 import axios from "axios";
 import {useEffect,useState,} from "react";
+ 
 
-export default function CheckOut (){
+function CheckOut (){
 
-    const [users,setUsers] = useState([]);
+    const [orders,setOrders] = useState([]);
     const [firstName,setFirstName] =useState("");
     const [lastName,setLastName] =useState("");
     const [phoneNumber,setPhoneNumber] =useState("");
@@ -40,7 +41,7 @@ async function save(event){
      
     const loadOrders=async () =>{
         const result =await axios.post("http://localhost:8080/Order");
-        setUsers(result.data);
+        setOrders(result.data);
         console.log(result.data);
     }
 
@@ -70,6 +71,8 @@ async function save(event){
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                      
                                     <tr>
                                         <td>petfoot</td>
                                         <td>$.200</td>
@@ -77,7 +80,7 @@ async function save(event){
                                         <td>400</td>
                                     </tr>
                                         <td colSpan="2" className='text-end'>Grand Total</td>
-                                        <td colSpan="2" className='text-end'>400</td>
+                                        <td colSpan="1" className='text-end'>400</td>
                                     <tr>
                                     </tr>
                                 </tbody>
@@ -196,3 +199,4 @@ async function save(event){
     </div>
   )
 }
+export default CheckOut;
