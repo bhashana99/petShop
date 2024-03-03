@@ -27,7 +27,7 @@ export default function Nav() {
         </ul>
       </div>
       <div className="flex justify-between gap-5  ">
-        <CiShoppingCart className="text-2xl" />
+        <Link to='/cart' ><CiShoppingCart className="text-2xl" /></Link>
         <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
        
       </div>

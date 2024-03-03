@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import wallpaper_1 from '../components/images/wallpaper_1.jpg';
-import wallpaper_2 from '../components/images/wallpaper_2.jpg';
-import wallpaper_3 from '../components/images/wallpaper_3.jpeg';
+// import wallpaper_1 from '../components/images/wallpaper_1.jpg';
+// import wallpaper_2 from '../components/images/wallpaper_2.jpg';
+// import wallpaper_3 from '../components/images/wallpaper_3.jpeg';
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import ViewAll from "./ViewAll";
