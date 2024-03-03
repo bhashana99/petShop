@@ -15,6 +15,17 @@ public class Cart {
     @Column
     private int productId;
 
+    @Column
+    private int cartQty;
+
+    public int getCartQty() {
+        return cartQty;
+    }
+
+    public void setCartQty(int cartQty) {
+        this.cartQty = cartQty;
+    }
+
     public int getCartId() {
         return cartId;
     }
