@@ -20,13 +20,15 @@ export default function Nav() {
       <div className="">
         <ul className=" justify-between gap-8 uppercase hidden md:flex font-medium text-2xl ">
           <Link to={"/"}><li>Home</li></Link>
-          <Link><li>About</li></Link>
+          <Link to={"/aboutUs"}><li>About</li></Link>
           <Link to={"/shop"}><li>Shop</li></Link>
-          <Link><li>Contact</li></Link>
+          <Link to={"/contactUs"}><li>Contact</li></Link>
         </ul>
       </div>
       <div className="flex justify-between gap-5  ">
-        <CiShoppingCart className="text-2xl" />
+        <Link to={"/cart"}>
+          <CiShoppingCart className="text-2xl" />
+        </Link>
         <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
        
       </div>
