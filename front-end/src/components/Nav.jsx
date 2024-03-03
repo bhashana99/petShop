@@ -1,4 +1,3 @@
-import Logo from '../components/images/Logo.jpg'
 import { CiShoppingCart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
@@ -13,21 +12,24 @@ export default function Nav() {
   };
 
   return (
-    <div className="flex justify-between p-8 bg-white text-black">
+    <div className="flex justify-between p-8 bg-white text-black text-xl">
       <div className="flex"> 
-        <img className="logo" src={Logo} alt="" />
+        <img className="logo" src="images/Logo.jpg" alt="" />
         <h1 className="text-3xl logo-name font-semibold">PetZone</h1>
       </div>
       <div className="">
         <ul className=" justify-between gap-8 uppercase hidden md:flex font-medium text-2xl ">
           <Link to={"/"}><li>Home</li></Link>
-          <Link><li>About</li></Link>
+          <Link to={"/aboutUs"}><li>About</li></Link>
           <Link to={"/shop"}><li>Shop</li></Link>
-          <Link><li>Contact</li></Link>
+          <Link to={"/contactUs"}><li>Contact</li></Link>
         </ul>
       </div>
       <div className="flex justify-between gap-5  ">
-        <Link to='/cart' ><CiShoppingCart className="text-2xl" /></Link>
+        <Link to={"/cart"}>
+          <CiShoppingCart className="text-2xl" />
+        </Link>
+
         <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
        
       </div>
