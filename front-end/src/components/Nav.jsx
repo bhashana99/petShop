@@ -1,4 +1,3 @@
-import Logo from '../components/images/Logo.jpg'
 import { CiShoppingCart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
@@ -15,7 +14,7 @@ export default function Nav() {
   return (
     <div className="flex justify-between p-8 bg-white text-black">
       <div className="flex"> 
-        <img className="logo" src={Logo} alt="" />
+        <img className="logo" src="images/Logo.jpg" alt="" />
         <h1 className="text-3xl logo-name font-semibold">PetZone</h1>
       </div>
       <div className="">
