@@ -5,6 +5,21 @@ import { useState } from "react";
 function Cart({ customerId }) {
   const [productDetails, setProductDetails] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchCartItems = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `http://localhost:5173/api/v1/cart/${id}`
+  //       );
+  //       setCartItems(response.data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   fetchCartItems();
+  // }, []);
 
   // const handleTotalPrice=(qty)=>{
   //   setTotalPrice((qty)=>{
