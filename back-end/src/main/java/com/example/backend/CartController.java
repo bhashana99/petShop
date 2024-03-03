@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin("http://127.0.0.1:5173/")
+@RequestMapping("/api/v1/cart")
 public class CartController {
     CartRepository cartRepository;
 
@@ -17,14 +19,20 @@ public class CartController {
     public Cart getCart(@RequestParam int cartId){
         return cartRepository.findById(cartId);
     }
+
     @GetMapping("/getcartpid")
     public List<Cart> getProductId(@RequestParam int productId){
         return cartRepository.findByProductId(productId);
     }
 
-    @PostMapping("/cart")
+    @PostMapping("/addToCart/{userId}")
     public void addCart(@RequestBody Cart cart){
         cartRepository.save(cart);
     }
+    @PostMapping("/removeCart/{cartId}")
+    public void removeCart(@RequestBody Cart cart){
+        cartRepository.delete(cart);
+    }
+
 
 }
