@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+/* Addeed */
+.outerbox{
+    /* border: solid blue; */
+    min-height: 70vh;
+}
+.outerbox .row-1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* width: 100; */
+    /* align-items: center; */
+}
+.outerbox .row-1 .heading{
+    /* border: solid; */
+    font-size: 2rem;
+    font-weight: 700;
+    width: 10rem;
+}
+
+.outerbox .row-2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 3rem;
+    /* width: 100%; */
+    /* border: solid; */
+}
+.outerbox .row-2 .product-items{
+    /* border: solid red; */
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin: 0 3rem;  
+}
+.outerbox .row-2 .product-items .sub-headings{
+    border: solid green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkslategray;
+
+}
+
+.outerbox .row-2 .cart-total{
+    /* border: solid  red; */
+    flex-grow: 1;
+}
+.outerbox .row-2 .cart-total .sub-headings{
+    border: solid green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkslategray;
+    margin: 0 3rem;   
+}
+
+/* -------------cartItemCard------------------ */
+.card-box{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin: .5rem auto;
+    border: .3rem solid rgb(77, 233, 168);
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 80%; /*this css add to upper clz*/
+}
+.cart-img{
+    width: auto;
+    /* border: 2px solid lightgreen; */
+    margin-left: 3rem;
+}
+.cart-img img{
+    height: 12rem;
+    padding: .5rem;
+}
+.cart-details{
+    /* border: 2px solid lightgreen; */
+    margin-left: 5rem;
+    height: 10rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-around; */
+    justify-content: space-around;
+}
+.cart-details .item-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(78, 78, 78);
+}
+.cart-details .item-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(116, 116, 116);
+}
+.cart-details .item-button{
+    /* border: solid; */
+    display: flex;
+    justify-content: space-around;
+}
+.cart-details .item-button .item-QtyButton button{
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+.cart-details .item-button .item-remove button{
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: pink;
+    border: 1px solid red;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: red;
+
+}
