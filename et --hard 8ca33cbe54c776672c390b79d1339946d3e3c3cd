@@ -1,0 +1,89 @@
+[33mcommit b23d0c33973a0de811b2b91aea946157af7cc292[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbatheesha-changes[m[33m)[m
+Author: Batheesha222 <batheesha.dilmeen@gmail.com>
+Date:   Sat Feb 24 15:12:08 2024 +0530
+
+    CartCard.jsx created
+
+[33mcommit 8ca33cbe54c776672c390b79d1339946d3e3c3cd[m
+Author: Batheesha222 <batheesha.dilmeen@gmail.com>
+Date:   Wed Feb 21 22:46:33 2024 +0530
+
+    created the basic structure of the cart
+
+[33mcommit 49b00201f8a99a13c6e31630077a83d765922ba0[m
+Author: Batheesha222 <batheesha.dilmeen@gmail.com>
+Date:   Wed Feb 21 19:45:04 2024 +0530
+
+    cart.css file created and designed cart structure
+
+[33mcommit 94ec64cb1008e447ea2a3d539b1f3501eaea67e5[m[33m ([m[1;31morigin/batheesha-changes[m[33m)[m
+Author: Batheesha222 <batheesha.dilmeen@gmail.com>
+Date:   Wed Feb 21 17:04:19 2024 +0530
+
+    Cart.jsx created
+
+[33mcommit 14eba8a0f3a2c8188548e2dc40d0367c0e214841[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Wed Feb 21 10:08:19 2024 +0530
+
+    backend folder structure
+
+[33mcommit ac480dc56bb6fad208e3642fc60735bf91b55202[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Tue Feb 20 23:35:18 2024 +0530
+
+    footer mobile UI
+
+[33mcommit a2f7da1001bd48d54025b2c6bb23832b02de3641[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Tue Feb 20 23:06:13 2024 +0530
+
+    mobile size nav bar UI
+
+[33mcommit c81f065f831a279a43aef028997d296d58ed7598[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Tue Feb 20 14:33:50 2024 +0530
+
+    footer UI
+
+[33mcommit 70f3930e2854ce619ae6dea9fe0ae1b68da7e55b[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Tue Feb 20 10:46:16 2024 +0530
+
+    add image slider
+
+[33mcommit 86385d96013bdedb56b2ecc37d94fda20c6b5ec9[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Tue Feb 20 10:04:02 2024 +0530
+
+    navbar UI
+
+[33mcommit d1d8e224d86815b9edb1a39e5ab68f959a100cb4[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Tue Feb 20 08:57:01 2024 +0530
+
+    Configure JPA
+
+[33mcommit bb282a871c98effe4bff85d042bd0bfe6ffbadd6[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Fri Feb 16 17:51:39 2024 +0530
+
+    install tailwind css
+
+[33mcommit 9720dc898eb1e63b40a322f6be9365eb2de0777a[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Fri Feb 16 16:55:27 2024 +0530
+
+    Create Home page and route it
+
+[33mcommit d6501dd9f2b10437febd238b93eda9eae89af20a[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Fri Feb 16 16:48:10 2024 +0530
+
+    connect to postgreSQL database
+
+[33mcommit a7665d7c171d5a6f77a3058ff7417a11067dd43e[m
+Author: Bhashana Chamodya <bhashanachamodya99@gmail.com>
+Date:   Fri Feb 16 10:20:21 2024 +0530
+
+    start project
