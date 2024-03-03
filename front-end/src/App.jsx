@@ -8,6 +8,8 @@ import Nav from './components/Nav'
 import SingleProductDetails from "./components/SingleProductDetails";
 import Shop from "./components/Shop";
 import CheckOut from "./pages/CheckOut";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "./style.css"
 
@@ -27,6 +29,8 @@ function App() {
         <Route path="/product-details/:id" element={<SingleProductDetails/>} />
         <Route path="/shop" element={<Shop/>} />
         <Route path="/checkout" element={<CheckOut/>} />
+        <Route path="/contactUs" element={<ContactUs/>} />
+        <Route path="/aboutUs" element={<AboutUs/>} />
 
       </Routes>
 
