@@ -25,9 +25,9 @@ export default function Home() {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide><img src="images/wallpaper_1.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="images/wallpaper_2.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="images/wallpaper_3.jpeg" alt="" /></SwiperSlide>
+          <SwiperSlide><img src="images/wallpaper 1.jpg" alt="" /></SwiperSlide>
+          <SwiperSlide><img src="images/wallpaper 2.jpg" alt="" /></SwiperSlide>
+          <SwiperSlide><img src="images/wallpaper 3.jpg" alt="" /></SwiperSlide>
           
         </Swiper>
         

@@ -12,7 +12,7 @@ export default function Nav() {
   };
 
   return (
-    <div className="flex justify-between p-8 bg-white text-black">
+    <div className="flex justify-between p-8 bg-white text-black text-xl">
       <div className="flex"> 
         <img className="logo" src="images/Logo.jpg" alt="" />
         <h1 className="text-3xl logo-name font-semibold">PetZone</h1>

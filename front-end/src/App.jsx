@@ -15,8 +15,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sign-up" element={<SignUp/>} />
-        <Route path="/sign-in" element={<SignIn/>} />
+        {/* <Route path="/sign-up" element={<SignUp/>} />
+        <Route path="/sign-in" element={<SignIn/>} /> */}
         <Route path="/product-details/:id" element={<SingleProductDetails/>} />
         <Route path="/shop" element={<Shop/>} />
 
@@ -28,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
