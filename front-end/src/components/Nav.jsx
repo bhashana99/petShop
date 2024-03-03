@@ -1,8 +1,8 @@
-import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 
 export default function Nav() {
   const [nav, setNav] = useState(true);
@@ -12,21 +12,23 @@ export default function Nav() {
   };
 
   return (
-    <div className="flex justify-between p-8 bg-black text-white">
-      <div>
-        <h1>PetShop Logo</h1>
+    <div className="flex justify-between p-8 bg-white text-black">
+      <div className="flex"> 
+        <img className="logo" src="images/Logo.jpg" alt="" />
+        <h1 className="text-3xl logo-name font-semibold">PetZone</h1>
       </div>
       <div className="">
-        <ul className=" justify-between gap-8 uppercase hidden md:flex  ">
-          <li>Home</li>
-          <li>About</li>
-          <li>Shop</li>
-          <li>Contact</li>
+        <ul className=" justify-between gap-8 uppercase hidden md:flex font-medium text-2xl ">
+          <Link to={"/"}><li>Home</li></Link>
+          <Link><li>About</li></Link>
+          <Link to={"/shop"}><li>Shop</li></Link>
+          <Link><li>Contact</li></Link>
         </ul>
       </div>
       <div className="flex justify-between gap-5  ">
         <CiShoppingCart className="text-2xl" />
-        <CgProfile className="text-2xl" />
+        <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
+       
       </div>
 
       <div onClick={handleNav} className="block md:hidden">
