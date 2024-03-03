@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
 
-function CartItemCard(item) {
+function CartItemCard({item}) {
  
-  const {iid,iname,price,img} =item;
+  // const {id,iname,price,img} =item;
   const [qty,setQty] = useState(1);
 
   const handleQty = (d) => {
@@ -14,12 +14,12 @@ function CartItemCard(item) {
     }
   }
 
-  const handleUpdateQty = async (updateQty,iItemId) => {
+  const handleUpdateQty = async (cartId,qty) => {
     try {
       const response = await axios.post(
-        // `http://localhost:8080/api/v1/cart/updateShoppingCart?shoppingCartId=${shoppingCartId}&quantity=${quantity}`
+        `http://127.0.0.1:5173/api/v1/cart/addToCart/cartId?=${cartId}&cartQty?=${qty}`
         );
-      //return response.data;
+      return response.data;
     } catch (error) {
       console.log(error);
     }
@@ -30,23 +30,23 @@ function CartItemCard(item) {
     <div className="card-box">
       <div className="cart-img">
         <img
-          src={img}
+          src={item.img}
           alt="product-image"
         />
       </div>
       <div className="cart-details">
-        <div className="item-name">{iname}</div>
-        <div className="item-price">{price}</div>
+        <div className="item-name">{item.pname}</div>
+        <div className="item-price">{item.price}</div>
         <div className="item-button">
           <div className="item-QtyButton">
             <button onClick={()=>handleQty(1)}>+</button>
-            <button>{qty}</button>
+            <button>{item.qty}</button>
             <button onClick={()=>handleQty(-1)}>-</button>
-            <button onClick={()=>handleUpdateQty(qty,iid)}>Update</button>
+            <button onClick={()=>handleUpdateQty(item.qty,item.id)}>Update</button>
           </div>
           <div className="item-remove">
             
-            <button onClick={()=>{handleRemove(iid)}}>remove</button>
+            <button onClick={()=>{handleRemove(item.id)}}>remove</button>
           </div>
         </div>
       </div>

@@ -29,6 +29,7 @@ export default function Nav() {
         <Link to={"/cart"}>
           <CiShoppingCart className="text-2xl" />
         </Link>
+
         <Link to="sign-in"> <CgProfile className="text-2xl" /></Link>
        
       </div>
