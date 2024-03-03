@@ -7,7 +7,7 @@ import { useState } from "react";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
-export default function SignUp() {
+function SignUp() {
   let navigate = useNavigate();
 
   const [user, setUser] = useState({email: "",
@@ -120,3 +120,5 @@ export default function SignUp() {
     </div>
   );
 }
+
+export default SignUp;

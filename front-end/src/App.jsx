@@ -20,8 +20,10 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+
          {/* <Route path="/sign-up" element={<SignUp/>} /> 
         <Route path="/sign-in" element={<SignIn/>} />  */}
+
         <Route path="/product-details/:id" element={<SingleProductDetails/>} />
         <Route path="/shop" element={<Shop/>} />
         <Route path="/checkout" element={<CheckOut/>} />
