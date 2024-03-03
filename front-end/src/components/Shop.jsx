@@ -11,8 +11,9 @@ function Shop() {
     },[]);
 
     const loadProduct=async()=>{
-        const result=await axios.get("http://localhost:8010/petshop/product");
+        const result=await axios.get("http://localhost:8080/petshop/product");
         setProduct(result.data);
+        console.log(result.data);
     }
 
     return ( 

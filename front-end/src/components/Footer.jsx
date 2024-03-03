@@ -18,9 +18,9 @@ export default function Footer() {
         <div className="basis-1/3 mb-5">
           <h4 className="text-xl mb-3">About company overview</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quod
-            officia harum odit, aspernatur totam! Mollitia alias quibusdam
-            impedit eveniet accusantium aperiam labore dolores exercitationem.
+          We are leading in the pet care business, providing pet owners with everything they need to
+           look after their pet – from food, toys and bedding, medication and grooming services.
+          But we're more than just a pet supply store – we're a community of pet lovers dedicated to helping pets in need.
           </p>
         </div>
 

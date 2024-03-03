@@ -1,0 +1,27 @@
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(34, 24, 24);
+}
+.aboutUsBody{
+    display: flex;
+    text-align: center;
+    background-color: rgb(214, 211, 207);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.description{
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+.brandings{
+    display: flex;
+}
+.brandings img{
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    width: 15rem;
+}
